@@ -8,48 +8,60 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/welcome_msg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dip"
-        android:gravity="center"
-        android:text="Olá! Por favor, insira seu login e senha"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#FFF"
-        />
+    <RelativeLayout
+        android:layout_width="407dp"
+        android:layout_height="730dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="0dp">
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="387dp"
-        android:layout_height="42dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Login"
-        android:maxLines="1"
-        android:textColor="#FFF"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="38dp"
-        />
+        <TextView
+            android:id="@+id/welcome_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Olá! Por favor, insira seu login e senha"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="1dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="386dp"
-        android:layout_height="39dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Senha"
-        android:maxLines="1"
-        android:textColor="#FFF"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="87dp" />
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFF"
+            android:layout_marginTop="41dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="login" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFF"
+            android:layout_marginTop="81dp"
+            android:gravity="center"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Senha" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="#FFF"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="Enviar" />
+    </RelativeLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
